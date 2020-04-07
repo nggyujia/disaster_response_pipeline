@@ -1,7 +1,7 @@
 # Disaster Response Pipeline Project
 
 ### Introduction
-This project is part of the Udacity Data Science Nanodegree program. It combines knowledge on ETL and NLP and incorporates pipelines. The data is obtained through [Figure Eight](https://www.figure-eight.com/). 
+This project is part of the Udacity Data Science Nanodegree program. It combines knowledge on ETL and NLP and incorporates pipelines. The data is obtained through [Figure Eight](https://www.figure-eight.com/). The data comprised of messages sent during disaster events and are labelled to 36 categories. Each message can be labelled to one or more categories, and these categories will be useful to identify what information the message is conveying, if there is any help needed, and if so which disaster response organization can offer the help.
 
 ### Files
 You will find the raw data in the *data* folder as well as the python script to process the data. The processed data is then stored in a sqlite database created in the process_data.py script as well.
@@ -11,6 +11,7 @@ You will find the train_classifier.py script in the *models* folder. The script 
 You will find the files related to rendering and deploying the results to a web interface in the *app* folder. The run.py script calls the model from the pickle file to predict user input and generate the graphs. 
 
 ### Instructions
+#### Running the App
 1. Run the following commands in the project's root directory to set up the database and model.
 
     - To run ETL pipeline that cleans data and stores in database
@@ -22,6 +23,9 @@ You will find the files related to rendering and deploying the results to a web 
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+#### Using the App
+Input messages in the placeholder and click on Classify Message. The assigned categories by the model for the inputted message will be highlighted in green.
 
 ### Improvements
 The model can certainly be improved. More parameters can be considered through grid search, or other more sophisticated models can be used. There are many possibilities here.
